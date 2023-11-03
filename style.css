@@ -22,7 +22,7 @@ body {
 #genreForm,
 #playBtn {
   text-align: center;
-  margin: 0px auto;
+  margin: 10px auto;
   display: block;
   font-family: "Fredoka One", sans-serif;
 }
@@ -41,11 +41,11 @@ body {
 #moviePoster,
 #movieText {
   width: 50%;
-  float: left;
+  float: right;
 }
 
 img#moviePoster {
-  width: 100%;
+  width: 50%;
   height: auto;
   display: block;
   margin: auto;
@@ -59,7 +59,15 @@ img#moviePoster {
 
 #movieTitle,
 #movieOverview {
-  padding: 32px;
+  padding: 6px;
+}
+
+#movieTitle {
+  font-size: 32px;
+}
+
+#movieOverview {
+  font-size: 28px;
 }
 
 #playBtn {
@@ -108,4 +116,16 @@ select {
 #dislikeBtn {
   background-color: #c74a4a;
   color: #910000;
+}
+
+@media screen and (max-width: 1079px) {
+  img#moviePoster {
+    width: 100%;
+  }
+
+  #movieInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
